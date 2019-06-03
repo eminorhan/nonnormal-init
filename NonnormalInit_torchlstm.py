@@ -10,7 +10,8 @@ def chain_init(n, diag_gain=0, offdiag_gain=1.02):
     return W
 
 def fbchain_init(n, diag_gain=0, offdiag_gain=0.04):
-    W = diag_gain * torch.eye(n) + 0.99 * torch.diag(torch.ones(n-1), diagonal=1) + offdiag_gain * torch.diag(torch.ones(n-1), diagonal=-1)
+    W = diag_gain * torch.eye(n) + 0.99 * torch.diag(torch.ones(n-1), diagonal=1) + \
+        offdiag_gain * torch.diag(torch.ones(n-1), diagonal=-1)
     W = torch.cat((W, W, W, W), 0)
     return W
 
