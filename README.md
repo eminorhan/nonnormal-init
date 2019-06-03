@@ -10,7 +10,7 @@ The files `NonnormalInit_torchrnn.py` and `NonnormalInit_torchlstm.py` contain t
 The remaining files can be used to replicate the results in Figure 3. An example usage would be as follows:
 
 ```
-python3 train.py --task 'copy' --init 'chain' --init_scale 0.99 --lr 3e-6 --rand_seed 1 
+python3 train.py --task 'copy' --init 'chain' --init_scale 0.99 --lr 3e-6 --rand_seed 2
 ```
 where:
 
