@@ -16,7 +16,7 @@ where:
 
 * `task` is the task (`copy, addition, psmnist`) 
 * `init` is the initializer for the RNN (`chain, fbchain, orthogonal, identity`) 
-* `init_scale` is the gain of the initializer (in the paper, this corresponds to `alpha` for the `chain`, `beta` for the `fbchain` initializer, and `lambda` for the `orthogonal` and `identity` initializers) 
+* `init_scale` is the gain of the initializer (in the paper, this corresponds to `alpha` for the `chain` initializer, `beta` for the `fbchain` initializer, and `lambda` for the `orthogonal` and `identity` initializers) 
 * `lr` is the learning rate for the rmsprop algorithm
 * `rand_seed` is the random seed. 
 
