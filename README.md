@@ -1,2 +1,15 @@
 # Sequential non-normal initializers for RNNs
-PyTorch and Keras classes implementing the non-normal initializers proposed in the following paper:
+PyTorch and Keras functions and classes implementing the non-normal initializers proposed in the following paper:
+
+Orhan AE, Pitkow X (2019) [Improved memory in recurrent neural networks with sequential non-normal dynamics.](https://arxiv.org/abs/1905.13715) arXiv:1905.13715.
+
+The file `NonnormalInit.py` contains plug-and-play Keras initializer classes implementing the proposed non-normal initializations for RNNs. 
+
+The files `NonnormalInit_torchrnn.py` and `NonnormalInit_torchlstm.py` contain torch functions implementing the proposed non-normal initializers for vanilla RNNs and LSTMs, respectively. The `ramp_init` function in `NonnormalInit_torchlstm.py` implements the "mixed" initialization strategy discussed in section 2.5 of the paper.
+
+The remaining files can be used to replicate the results in Figure 3. An example usage would be as follows:
+
+```
+python3 train.py --task 'copy' --init 'chain' --init_scale 0.99 --lr 3e-6 --rand_seed 1 
+```
+where `task` is the task (`copy, addition, psmnist`); `init` is the initializer for the RNN (`chain, fbchain, orthogonal, identity`); `init_scale` is the gain of the initializer (in the paper, this corresponds to `alpha` for the `chain`, `beta` for the `fbchain` initializer, and `lambda` for the `orthogonal` and `identity` initializers); `lr` is the learning rate for the rmsprop algorithm; and `rand_seed` is the random seed. 
