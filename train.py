@@ -5,8 +5,7 @@ import sys
 import argparse
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Dense, Activation
-from keras.layers import SimpleRNN
+from keras.layers import SimpleRNN, Dense, Activation
 from keras.optimizers import rmsprop
 from utils import InitLoader, EarlyStoppingByLossVal
 from tasks import TaskLoader
