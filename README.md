@@ -12,4 +12,12 @@ The remaining files can be used to replicate the results in Figure 3. An example
 ```
 python3 train.py --task 'copy' --init 'chain' --init_scale 0.99 --lr 3e-6 --rand_seed 1 
 ```
-where `task` is the task (`copy, addition, psmnist`); `init` is the initializer for the RNN (`chain, fbchain, orthogonal, identity`); `init_scale` is the gain of the initializer (in the paper, this corresponds to `alpha` for the `chain`, `beta` for the `fbchain` initializer, and `lambda` for the `orthogonal` and `identity` initializers); `lr` is the learning rate for the rmsprop algorithm; and `rand_seed` is the random seed. 
+where:
+
+* `task` is the task (`copy, addition, psmnist`) 
+* `init` is the initializer for the RNN (`chain, fbchain, orthogonal, identity`) 
+* `init_scale` is the gain of the initializer (in the paper, this corresponds to `alpha` for the `chain`, `beta` for the `fbchain` initializer, and `lambda` for the `orthogonal` and `identity` initializers) 
+* `lr` is the learning rate for the rmsprop algorithm
+* `rand_seed` is the random seed. 
+
+See `train.py` for more options.
