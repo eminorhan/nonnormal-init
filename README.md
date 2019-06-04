@@ -20,4 +20,4 @@ where:
 * `lr` is the learning rate for the rmsprop algorithm
 * `rand_seed` is the random seed. 
 
-See `train.py` for more options.
+See [`train.py`](https://github.com/eminorhan/nonnormal-init/blob/master/train.py) for more options.
