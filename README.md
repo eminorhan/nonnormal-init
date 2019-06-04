@@ -5,7 +5,7 @@ Orhan AE, Pitkow X (2019) [Improved memory in recurrent neural networks with seq
 
 The file [`NonnormalInit.py`](https://github.com/eminorhan/nonnormal-init/blob/master/NonnormalInit.py) contains plug-and-play Keras initializer classes implementing the proposed non-normal initializers for RNNs. 
 
-The files [`NonnormalInit_torchrnn.py`](https://github.com/eminorhan/nonnormal-init/blob/master/NonnormalInit_torchrnn.py) and [`NonnormalInit_torchlstm.py`](https://github.com/eminorhan/nonnormal-init/blob/master/NonnormalInit_torchlstm.py) contain torch functions implementing the proposed non-normal initializers for vanilla RNNs and LSTMs, respectively. The `ramp_init` function in `NonnormalInit_torchlstm.py` implements the "mixed" initialization strategy discussed in section 2.5 of the paper.
+The files [`NonnormalInit_torchrnn.py`](https://github.com/eminorhan/nonnormal-init/blob/master/NonnormalInit_torchrnn.py) and [`NonnormalInit_torchlstm.py`](https://github.com/eminorhan/nonnormal-init/blob/master/NonnormalInit_torchlstm.py) contain torch functions implementing the proposed non-normal initializers for vanilla RNNs and LSTMs, respectively. The `ramp_init` function in [`NonnormalInit_torchlstm.py`](https://github.com/eminorhan/nonnormal-init/blob/master/NonnormalInit_torchlstm.py) implements the "mixed" initialization strategy discussed in section 2.5 of the paper.
 
 The remaining files can be used to replicate the results in Figure 3. An example usage would be as follows:
 
