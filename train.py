@@ -17,7 +17,7 @@ parser.add_argument('--init_scale', type=float, default=1.02, help='scale for in
 parser.add_argument('--lr', type=float, default=1e-4, help='learning rate')
 parser.add_argument('--rand_seed', type=int, default=1, help='random seed')
 parser.add_argument('--batch_size', type=int, default=16, help='batch size')
-parser.add_argument('--epochs', type=int, default=50, help='epochs')
+parser.add_argument('--epochs', type=int, default=100, help='epochs')
 parser.add_argument('--hidden_units', type=int, default=100, help='number of hidden units')
 parser.add_argument('--clip_norm', type=float, default=10.0, help='gradient norm clip')
 
