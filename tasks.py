@@ -48,7 +48,7 @@ class psMNISTTask(Task):
     def __init__(self):
         super(psMNISTTask, self).__init__()
         self.num_classes = 10
-        self.return_sequences=False
+        self.return_sequences = False
         self.hidden_activation = 'elu'
         self.output_activation = 'softmax'
         self.loss_fnc = 'categorical_crossentropy'
@@ -58,9 +58,9 @@ class psMNISTTask(Task):
         return generate_data.permuted_mnist_task()
 
 def TaskLoader(task):
-    if task=='addition':
+    if task == 'addition':
         return AdditionTask()
-    elif task=='copy':
+    elif task == 'copy':
         return CopyTask()
-    elif task=='psmnist':
+    elif task == 'psmnist':
         return psMNISTTask()
