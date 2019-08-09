@@ -66,7 +66,5 @@ print('RNN test accuracy:', scores[1])
 # save the results
 model_id = args.task + '_' + args.init + '_' + '%.2f' % args.init_scale + '_' + '%.6f' % args.lr + '_' + '%i' % args.rand_seed
 model.save(model_id + '.h5')
-np.savez(model_id + '.npz', {'hist_acc': hist.history['acc'],
-                             'hist_loss': hist.history['loss'],
-                             'hist_val_acc': hist.history['val_acc'],
-                             'hist_val_loss': hist.history['val_loss']})
+np.savez(model_id + '.npz', hist_acc=hist.history['acc'], hist_loss=hist.history['loss'], hist_val_acc=hist.history['val_acc'], 
+         hist_val_loss=hist.history['val_loss'])
