@@ -11,4 +11,3 @@ def fbchain_init(n, diag_gain=0, offdiag_gain=0.04):
 
 def nonnormal_source_init(n, m, scale=0.9):
     return scale * torch.eye(n, m)
-
