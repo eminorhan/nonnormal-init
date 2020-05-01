@@ -36,6 +36,8 @@ def InitLoader(init, init_scale, hidden_units):
     elif init=='identity':
         kernel_initializer = RandomNormal(stddev=0.9/np.sqrt(hidden_units))
         recurrent_initializer = Identity(gain=init_scale)
+    else:
+        raise ValueError('Initializer not defined.')
 
     return kernel_initializer, recurrent_initializer
 
