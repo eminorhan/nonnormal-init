@@ -1,7 +1,7 @@
 # Sequential non-normal initializers for RNNs
-PyTorch and Keras functions and classes implementing the non-normal initializers proposed in the following paper:
+This repository contains the code for reproducing the results in the following paper:
 
-Orhan AE, Pitkow X (2020) [Improved memory in recurrent neural networks with sequential non-normal dynamics.](https://openreview.net/forum?id=ryx1wRNFvB) International Conference on Learning Representations (ICLR 2020).
+Orhan AE, Pitkow X (2020) [Improved memory in recurrent neural networks with sequential non-normal dynamics.](https://openreview.net/forum?id=ryx1wRNFvB) *International Conference on Learning Representations (ICLR 2020)*.
 
 The file [`NonnormalInit.py`](https://github.com/eminorhan/nonnormal-init/blob/master/NonnormalInit.py) contains plug-and-play Keras initializer classes implementing the proposed non-normal initializers for RNNs. The code was tested with `keras==2.2.4`, other versions may or may not work.
 
