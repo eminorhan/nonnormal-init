@@ -52,6 +52,8 @@ class FbChainInit(Initializer):
 
 class NonnormalSourceInit(Initializer):
     """Non-normal source Initializer to be used as the input-to-hidden weight initializer in non-normal RNNs.
+    # Arguments
+        scale: scale factor to apply to the entire matrix.
     """
     def __init__(self, scale=0.9):
         self.scale = scale
